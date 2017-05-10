@@ -33,13 +33,13 @@
     (str (amount1 line) " " measure-word1 " of beer on the wall, "
          (amount2 line) " " measure-word2 " of beer.\n"
          sentence ", "
-         (amount3 line) " " measure-word3 " of beer on the wall.")))
+         (amount3 line) " " measure-word3 " of beer on the wall.\n")))
 
 (defn verses [start-line end-line]
   (->> (range end-line (inc start-line))
        (map verse)
        (reverse)
-       (string/join "\n\n")))
+       (string/join "\n")))
 
 (defn song []
   (verses 99 0))
