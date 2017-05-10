@@ -8,31 +8,31 @@
 Take one down and pass it around, 98 bottles of beer on the wall.")]
     (is (= (verse 99) expected))))
 
-#_(deftest test-another-verse
+(deftest test-another-verse
   (let [expected (str
 "89 bottles of beer on the wall, 89 bottles of beer.
 Take one down and pass it around, 88 bottles of beer on the wall.")]
     (is (= (verse 89) expected))))
 
-#_(deftest test-verse-2
+(deftest test-verse-2
   (let [expected (str
 "2 bottles of beer on the wall, 2 bottles of beer.
 Take one down and pass it around, 1 bottle of beer on the wall.")]
     (is (= (verse 2) expected))))
 
-#_(deftest test-verse-1
+(deftest test-verse-1
   (let [expected (str
 "1 bottle of beer on the wall, 1 bottle of beer.
 Take it down and pass it around, no more bottles of beer on the wall.")]
     (is (= (verse 1) expected))))
 
-#_(deftest test-verse-0
+(deftest test-verse-0
   (let [expected (str
 "No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.")]
     (is (= (verse 0) expected))))
 
-#_(deftest test-a-couple-verses
+(deftest test-a-couple-verses
   (let [expected (str
 "99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
@@ -41,7 +41,7 @@ Take one down and pass it around, 98 bottles of beer on the wall.
 Take one down and pass it around, 97 bottles of beer on the wall.")]
     (is (= (verses 99 98) expected))))
 
-#_(deftest test-a-few-verses
+(deftest test-a-few-verses
   (let [expected (str
 "2 bottles of beer on the wall, 2 bottles of beer.
 Take one down and pass it around, 1 bottle of beer on the wall.
@@ -53,7 +53,7 @@ No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.")]
     (is (= (verses 2 0) expected))))
 
-#_(deftest test-the-whole-song
+(deftest test-the-whole-song
   (let [expected (str
 "99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
